@@ -34,7 +34,7 @@
     color: var(--text);
     font-family: var(--font-body);
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden; overflow-y: auto;
     background-image:
       radial-gradient(ellipse 80% 60% at 10% 0%, rgba(0,212,255,0.07) 0%, transparent 60%),
       radial-gradient(ellipse 60% 50% at 90% 100%, rgba(123,95,255,0.08) 0%, transparent 60%);
@@ -46,7 +46,7 @@
     opacity: 0.4;
   }
 
-  .app { display:flex; height:100vh; position:relative; z-index:1; }
+  .app { display:flex; min-height:100vh; position:relative; z-index:1; }
 
   .sidebar {
     width: 280px; min-width: 280px;
